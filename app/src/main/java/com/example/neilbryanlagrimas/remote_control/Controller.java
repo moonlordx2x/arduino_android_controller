@@ -56,12 +56,10 @@ public class Controller extends AppCompatActivity {
                 case MotionEvent.ACTION_DOWN:
                     // PRESSED
                     up();
-                    Toast.makeText(Controller.this,"BUTTON UP HOLD",Toast.LENGTH_SHORT).show();
                     return true;
                case MotionEvent.ACTION_UP:
                    // RELEASED
                    brakes();
-                   Toast.makeText(Controller.this,"BUTTON UP RELEASE",Toast.LENGTH_SHORT).show();
                    return true; // if you want to handle the touch event
            }
                 return false;
@@ -75,12 +73,10 @@ public class Controller extends AppCompatActivity {
                     case MotionEvent.ACTION_DOWN:
                         // PRESSED
                         down();
-                        Toast.makeText(Controller.this,"BUTTON DOWN HOLD",Toast.LENGTH_SHORT).show();
                         return true;
                     case MotionEvent.ACTION_UP:
                         // RELEASED
                         brakes();
-                        Toast.makeText(Controller.this,"BUTTON DOWN RELEASE",Toast.LENGTH_SHORT).show();
                         return true; // if you want to handle the touch event
                 }
                 return false;
@@ -94,12 +90,10 @@ public class Controller extends AppCompatActivity {
                     case MotionEvent.ACTION_DOWN:
                         // PRESSED
                         up_left();
-                        Toast.makeText(Controller.this,"BUTTON up_left HOLD",Toast.LENGTH_SHORT).show();
                         return true;
                     case MotionEvent.ACTION_UP:
                         // RELEASED
                         brakes();
-                        Toast.makeText(Controller.this,"BUTTON up_left RELEASE",Toast.LENGTH_SHORT).show();
                         return true; // if you want to handle the touch event
                 }
                 return false;
@@ -113,12 +107,10 @@ public class Controller extends AppCompatActivity {
                     case MotionEvent.ACTION_DOWN:
                         // PRESSED
                         up_right();
-                        Toast.makeText(Controller.this,"BUTTON up_right HOLD",Toast.LENGTH_SHORT).show();
                         return true;
                     case MotionEvent.ACTION_UP:
                         // RELEASED
                         brakes();
-                        Toast.makeText(Controller.this,"BUTTON up_right RELEASE",Toast.LENGTH_SHORT).show();
                         return true; // if you want to handle the touch event
                 }
                 return false;
@@ -136,7 +128,6 @@ public class Controller extends AppCompatActivity {
                     case MotionEvent.ACTION_UP:
                         // RELEASED
                         brakes();
-                        Toast.makeText(Controller.this,"BUTTON down_left RELEASE",Toast.LENGTH_SHORT).show();
                         return true; // if you want to handle the touch event
                 }
                 return false;
@@ -150,12 +141,10 @@ public class Controller extends AppCompatActivity {
                     case MotionEvent.ACTION_DOWN:
                         // PRESSED
                         down_right();
-                        Toast.makeText(Controller.this,"BUTTON down_right HOLD",Toast.LENGTH_SHORT).show();
                         return true;
                     case MotionEvent.ACTION_UP:
                         // RELEASED
                         brakes();
-                        Toast.makeText(Controller.this,"BUTTON down_right RELEASE",Toast.LENGTH_SHORT).show();
                         return true; // if you want to handle the touch event
                 }
                 return false;
