@@ -13,10 +13,11 @@
         android:layout_height="85dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/up"
         android:minWidth="100dp"
         app:layout_constraintEnd_toEndOf="@+id/controller"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="@+id/controller"
         app:layout_constraintTop_toBottomOf="@+id/controller" />
 
@@ -37,106 +38,50 @@
         app:layout_constraintVertical_bias="0.009" />
 
     <Button
-        android:id="@+id/left"
-        android:layout_width="88dp"
-        android:layout_height="85dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/left"
-        android:minHeight="35dp"
-        android:minWidth="35dp"
-        app:layout_constraintBottom_toBottomOf="@+id/brake"
-        app:layout_constraintEnd_toStartOf="@+id/brake"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/brake" />
-
-    <Button
-        android:id="@+id/right"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/right"
-        android:minWidth="100dp"
-        app:layout_constraintBottom_toBottomOf="@+id/brake"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/brake"
-        app:layout_constraintTop_toTopOf="@+id/brake" />
-
-    <Button
         android:id="@+id/bot_left"
         android:layout_width="65dp"
         android:layout_height="62dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/down_left"
         android:minWidth="100dp"
         android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/down"
-        app:layout_constraintEnd_toStartOf="@+id/down"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/left"
-        app:layout_constraintTop_toBottomOf="@+id/left" />
+        app:layout_constraintEnd_toStartOf="@+id/down" />
 
     <Button
         android:id="@+id/up_left"
         android:layout_width="62dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/up_left"
         android:minWidth="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/left"
         app:layout_constraintEnd_toStartOf="@+id/up"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/left"
-        app:layout_constraintTop_toTopOf="@+id/up"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintTop_toTopOf="@+id/up" />
 
     <Button
         android:id="@+id/bot_right"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="24dp"
         android:background="@drawable/down_right"
         android:minWidth="100dp"
         app:layout_constraintBottom_toBottomOf="@+id/down"
-        app:layout_constraintEnd_toEndOf="@+id/right"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/down"
-        app:layout_constraintTop_toBottomOf="@+id/right"
-        app:layout_constraintVertical_bias="0.565" />
+        app:layout_constraintStart_toEndOf="@+id/down" />
 
     <Button
         android:id="@+id/up_right"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/up_right"
         android:minWidth="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/right"
-        app:layout_constraintEnd_toEndOf="@+id/right"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/up"
-        app:layout_constraintTop_toTopOf="@+id/up"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintTop_toTopOf="@+id/up" />
 
     <Button
         android:id="@+id/brake"
