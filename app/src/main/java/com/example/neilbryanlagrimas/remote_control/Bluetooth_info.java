@@ -3,6 +3,7 @@ package com.example.neilbryanlagrimas.remote_control;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
@@ -98,6 +99,7 @@ public class Bluetooth_info extends AppCompatActivity implements View.OnClickLis
         public void onItemClick (AdapterView<?> av, View v, int arg2, long arg3)
         {
             // Get the device MAC address, the last 17 chars in the View
+            Showdialog();
             String info = ((TextView) v).getText().toString();
             String address = info.substring(info.length() - 17);
 
@@ -107,7 +109,6 @@ public class Bluetooth_info extends AppCompatActivity implements View.OnClickLis
             //Change the activity.
             i.putExtra(EXTRA_ADDRESS, address); //this will be received at ledControl (class) Activity
             startActivity(i);
-            Showdialog();
             finish();
         }
     };
@@ -115,8 +116,9 @@ public class Bluetooth_info extends AppCompatActivity implements View.OnClickLis
 
     public void Showdialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Paired Device");
-        builder.setMessage("Connecting Bluetooth.....");
+        builder.setTitle("Pairing Device");
+        builder.setCancelable(false);
+        builder.setMessage("Connecting Bluetooth......");
         builder.create().show();
     }
 

@@ -151,6 +151,23 @@ public class Controller extends AppCompatActivity {
             }
         });
 
+        brake.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        // PRESSED
+                        brakes();
+                        return true;
+                    case MotionEvent.ACTION_UP:
+                        // RELEASED
+                        brakes();
+                        return true; // if you want to handle the touch event
+                }
+                return false;
+            }
+        });
+
 
 //        down.setOnClickListener(this);
 //
